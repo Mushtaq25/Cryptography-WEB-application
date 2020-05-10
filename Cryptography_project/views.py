@@ -66,9 +66,6 @@ def des_cipher(request):
 
     my_obj = DES_CIPHER()
 
-    #pt = "123456ABCD132536"
-    #key = "AABB09182736CCDD"
-
     plain_text = request.GET.get('text','default')
     key = request.GET.get('KEY','AABB09182736CCDD')
     check_encrypt = request.GET.get('encrypt','off')
@@ -189,7 +186,6 @@ class Caeser_cipher():
         letters = list("abcdefghijklmnopqrstuvwxyz")
 
         for i in join_sentence:
-            #print(i)
             if i == ' ':
                 plain_text += ' '
             else:
