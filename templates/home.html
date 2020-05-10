@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en" style="background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/computer-data-or-coding-background-design-joseph-gusack.jpg);">
+<head>
+    <meta charset="UTF-8">
+    <title>Encryption/decryption</title>
+</head>
+<body>
+<div id="heading" style="margin-left: 33%; margin-top: 3cm; color: greenyellow;font-size:xx-large;">
+    <h1>
+        Encryption/Decryption
+    </h1>
+</div>
+
+<div style="display:flex; flex-direction: row; margin-top: 5%;">
+<form action='{% url 'caeser' %}' method="POST">{% csrf_token %}
+    <!-- <textarea name="text" style="margin: 0px; width: 149px; height: 40px; margin-inline-start: 50%;"></textarea>
+    <br/>
+     <input type="checkbox" name="count" style="margin-left: 50%; margin-bottom: 1%;">count number of char <br> 
+    <button type='submit' style="margin-inline-start: 52%;color: black;background-color: brown;margin-top: 15dp;"> Analyze Text</button> -->
+    <button type="submit" style="margin-left: 13cm; margin-top: 3cm; width: 4cm; height: 2cm; font-size: x-large; border: 4mm ridge rgba(255, 0, 0, 0.6);">CAESER</button>
+</form>
+
+<form action="/playfair">
+    <button type="submit" style="margin-left: 3cm; margin-top: 3cm;width: 4cm; height: 2cm; font-size: x-large; border: 4mm ridge rgba(255, 0, 0, 0.6);">PLAYFAIR</button>
+</form>
+
+<form action="/des">
+    <button type="submit" style="margin-left: 3cm; margin-top: 3cm; width: 4cm; height: 2cm; font-size: x-large; border: 4mm ridge rgba(255, 0, 0, 0.6);">DES</button>
+</form>
+</div>
+
+
+</body>
+</html>

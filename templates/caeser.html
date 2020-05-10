@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="en" style="background-image: url(https://images.fineartamerica.com/images/artworkimages/mediumlarge/3/computer-data-or-coding-background-design-joseph-gusack.jpg);">
+<head>
+    <meta charset="UTF-8">
+    <title>Encryption/decryption</title>
+</head>
+<body>
+
+    <div id="heading" style="margin-left: 33%; margin-top: 3cm; color: greenyellow;font-size:xx-large;">
+        <h1>
+            Encryption/Decryption
+        </h1>
+        <h2 style="margin-left: 3cm; color:tomato; margin-top: -1cm;">
+            Caeser cipher
+        </h2>
+    </div>
+    <div style="font-style: normal; margin-left: 8cm; margin-top: 2cm;">
+        <h2>
+            <bold>
+                ENTER YOUR PLAIN MESSEGE BELOW:---
+            </bold>
+        </h2>
+            
+    </div>
+<form action="/caeser" method="GET">
+    <div style="display: flex;">
+        <textarea name="text" style="margin: 0px; width: 257px; height: 127px; margin-left: 15cm; font-size: large; background-color: rgb(180, 180, 180);border: thick double #1A237E;"></textarea> 
+        <div style="font-style: normal; margin-left: 1.5cm; margin-top: 1cm;">
+            <h2>
+                <bold>
+                    KEY ==
+                </bold>
+            </h2>
+                
+        </div>
+        <input type="number" id="number1" name="number1" min="1" max="30" style="margin-left: 0.5cm; margin-top: 1.3cm; width: 208px; height: 30px; font-size: large; background-color: rgb(180, 180, 180); border: thick double rgb(26, 35, 126);">
+        <!--<textarea name="KEY" style="margin-left: 0.5cm; margin-top: 1.3cm; width: 208px; height: 30px; font-size: large; background-color: rgb(180, 180, 180); border: thick double rgb(26, 35, 126);"></textarea> -->
+    </div>
+    <div style="display: flex; margin-left: 18cm; margin-top: 1cm; color: white; font-size: larger;">
+        <input type="checkbox" name='encrypt' style="margin-left: 1cm;">Encrypt
+        <input type="checkbox" name='decrypt' style="margin-left: 5cm; ">Decrypt
+    </div>
+    <br>
+    <button type="submit" style="width: 3cm; height: 1cm; background-color: black; color: aliceblue; border-radius: 30px; margin-left: 22cm;">SUBMIT</button>
+    <div style="margin-left: 20cm; color:greenyellow;">
+        <h3 style="color: greenyellow;">
+           <p><pre>{{ciphertext}}</pre>  </p>
+        </h3>
+    </div>
+</form>
+    
+</body>
+</html>
